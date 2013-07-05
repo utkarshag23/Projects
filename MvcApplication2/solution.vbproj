@@ -1,8 +1,9 @@
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Run">
   <PropertyGroup>
     <MSBuildCommunityTasksPath>$(MSBuildProjectDirectory)</MSBuildCommunityTasksPath>
   </PropertyGroup>
-  <Import Project="$(MSBuildProjectDirectory)\MSBuild.Community.Tasks.Targets"/>
+ 
+ <Import Project="$(MSBuildProjectDirectory)\MSBuild.Community.Tasks.Targets"/>
    
   <!-- Application Configurations -->
   <PropertyGroup>
@@ -11,22 +12,22 @@
    
   <ItemGroup>
     <AllProjects Include="$(MSBuildProjectDirectory)\MvcApplication2.Tests\MvcApplication2.Tests.csproj" />
-     </ItemGroup>
+   </ItemGroup>
    
-<Target Name="Build">
- <CallTarget Targets="Clean" />
-    <CallTarget Targets="Test" />
-	</Target> 
+  <Target Name="Run">
+   <CallTarget Targets="Clean" />
+   <CallTarget Targets="Test" />
+ </Target> 
 
   <Target Name="Clean">
     <MSBuild Projects="$(AllProjects)" />
-    
   </Target>  
     
   <Target Name="Test">
-        <NUnit ToolPath="$(NUnit-ToolPath)" DisableShadowCopy="true" Assemblies="$(MSBuildProjectDirectory)\MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" OutputXmlFile="$(MSBuildProjectDirectory)\qhode\testresults\test-results.xml" />
+    <NUnit ToolPath="$(NUnit-ToolPath)" DisableShadowCopy="true" Assemblies="$(MSBuildProjectDirectory)\MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" OutputXmlFile="$(MSBuildProjectDirectory)\qhode\testresults\test-results.xml">
+    </NUnit>
   </Target>
         
-  
- 
-</Project>
+  <Target Name="Build" DependsOnTargets="Run;"/>
+
+  </Project>
