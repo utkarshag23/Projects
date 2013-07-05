@@ -6,12 +6,11 @@
    
   <!-- Application Configurations -->
   <PropertyGroup>
-    <SolutionFileName>MvcApplication2.sln</SolutionFileName>
     <NUnit-ToolPath>$(MSBuildProjectDirectory)\packages\NUnit.Runners.2.6.2\tools</NUnit-ToolPath>    
   </PropertyGroup>
    
   <ItemGroup>
-    <AllProjects Include="$(MSBuildProjectDirectory)\*.csproj" />
+    <AllProjects Include="$(MSBuildProjectDirectory)\MvcApplication2.Tests\MvcApplication2.Tests.csproj" />
      </ItemGroup>
    
 <Target Name="Build">
@@ -25,7 +24,7 @@
   </Target>  
     
   <Target Name="Test">
-        <NUnit ToolPath="$(NUnit-ToolPath)" DisableShadowCopy="true" Assemblies="MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" OutputXmlFile="$(MSBuildProjectDirectory)\qhode\testresults\test-results.xml" />
+        <NUnit ToolPath="$(NUnit-ToolPath)" DisableShadowCopy="true" Assemblies="$(MSBuildProjectDirectory)\MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" OutputXmlFile="$(MSBuildProjectDirectory)\qhode\testresults\test-results.xml" />
   </Target>
         
   
