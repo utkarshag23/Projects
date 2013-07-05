@@ -2,16 +2,16 @@
   <PropertyGroup>
     <MSBuildCommunityTasksPath>$(MSBuildProjectDirectory)</MSBuildCommunityTasksPath>
   </PropertyGroup>
-  <Import Project="C:\Users\utkarshag23\Documents\Visual Studio 2012\Projects\MvcApplication2\MSBuild.Community.Tasks.Targets"/>
+  <Import Project="@(MSBuildProjectDirectory)\MSBuild.Community.Tasks.Targets"/>
    
   <!-- Application Configurations -->
   <PropertyGroup>
     <SolutionFileName>MvcApplication2.sln</SolutionFileName>
-    <NUnit-ToolPath>C:\Users\utkarshag23\Documents\Visual Studio 2012\Projects\MvcApplication2\packages\NUnit.Runners.2.6.2\tools</NUnit-ToolPath>    
+    <NUnit-ToolPath>@(MSBuildProjectDirectory)\packages\NUnit.Runners.2.6.2\tools</NUnit-ToolPath>    
   </PropertyGroup>
    
   <ItemGroup>
-    <AllProjects Include="C:\Users\utkarshag23\Documents\Visual Studio 2012\Projects\MvcApplication2\*.csproj" />
+    <AllProjects Include="@(MSBuildProjectDirectory)\*.csproj" />
      </ItemGroup>
    
   <Target Name="Clean">
@@ -25,7 +25,7 @@
   </Target>
      
   <Target Name="Test" DependsOnTargets="Clean;Compile">
-        <NUnit ToolPath="$(NUnit-ToolPath)" DisableShadowCopy="true" Assemblies="MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" OutputXmlFile="C:\Users\utkarshag23\Documents\Visual Studio 2012\Projects\MvcApplication2\qhode\Test Results\test-results.xml" />
+        <NUnit ToolPath="$(NUnit-ToolPath)" DisableShadowCopy="true" Assemblies="MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" OutputXmlFile="@(MSBuildProjectDirectory)\qhode\Test Results\test-results.xml" />
   </Target>
         
   <Target Name="Build" DependsOnTargets="Clean;Compile;Test;" />
