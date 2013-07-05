@@ -1,0 +1,34 @@
+﻿@model MvcApplication2.Models.Class1
+
+@{
+    ViewBag.Title = "View1";
+}
+
+<h2>View1</h2>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title> view </title>
+        </head>
+        <body>
+
+             <!---form method="post" action ="Create" runat="server">
+        
+                 @Html.TextBoxFor(m=>m.text1)<br/>
+                 @Html.TextBoxFor(m=>m.text2)<br/>
+                
+                <input type="button" value ="Create"/>
+                </!--->
+    @using (Html.BeginForm())
+    { 
+    @Html.TextBoxFor(m=>m.text1)    <input type="submit" value="b1" name="op"><br/>  //@Html.DisplayNameFor(m=>m.result)<br/>
+                 @Html.TextBoxFor(m=>m.text2)<input type="submit" value="b2" name="op"><br/>
+        @Html.TextBoxFor(m=>m.text3)<input type="submit" value="b3" name="op"><br/>
+    }
+    
+    @using (Html.BeginForm())
+    {
+  <p> Output: @Html.TextAreaFor(m=>m.result)<br/></p> 
+    }
+            </body>
+    </html>

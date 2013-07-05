@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication2", "MvcApplication2\MvcApplication2.csproj", "{BD5BBED1-6E34-4512-BF2A-F5A954E16A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication2.Tests", "MvcApplication2.Tests\MvcApplication2.Tests.csproj", "{7130E4A7-FF79-4D21-8E26-23C3B73479D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{81E7EDD4-29C5-4687-98B9-89A6CB265B8B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD5BBED1-6E34-4512-BF2A-F5A954E16A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5BBED1-6E34-4512-BF2A-F5A954E16A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5BBED1-6E34-4512-BF2A-F5A954E16A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5BBED1-6E34-4512-BF2A-F5A954E16A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7130E4A7-FF79-4D21-8E26-23C3B73479D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7130E4A7-FF79-4D21-8E26-23C3B73479D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7130E4A7-FF79-4D21-8E26-23C3B73479D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7130E4A7-FF79-4D21-8E26-23C3B73479D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
