@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\utkarshag23\Documents\Visual Studio 2012\Projects\MvcApplication2\MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" total="7" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-07-05" time="17:35:27">
+<test-results name="C:\Users\utkarshag23\Documents\Visual Studio 2012\Projects\MvcApplication2\MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" total="7" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-07-05" time="17:40:38">
   <environment nunit-version="2.6.2.12296" clr-version="4.0.30319.18046" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\utkarshag23\Documents\Visual Studio 2012\Projects\MvcApplication2" machine-name="UTKARSH" user="utkarshag23" user-domain="utkarsh" />
   <culture-info current-culture="en-IN" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\utkarshag23\Documents\Visual Studio 2012\Projects\MvcApplication2\MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" executed="True" result="Success" success="True" time="0.324" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\utkarshag23\Documents\Visual Studio 2012\Projects\MvcApplication2\MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" executed="True" result="Success" success="True" time="0.317" asserts="0">
     <results>
-      <test-suite type="Namespace" name="MvcApplication2" executed="True" result="Success" success="True" time="0.298" asserts="0">
+      <test-suite type="Namespace" name="MvcApplication2" executed="True" result="Success" success="True" time="0.291" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.297" asserts="0">
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.291" asserts="0">
             <results>
-              <test-suite type="Namespace" name="Controllers" executed="True" result="Success" success="True" time="0.297" asserts="0">
+              <test-suite type="Namespace" name="Controllers" executed="True" result="Success" success="True" time="0.291" asserts="0">
                 <results>
-                  <test-suite type="TestFixture" name="Default1ControllerTest" executed="True" result="Success" success="True" time="0.295" asserts="0">
+                  <test-suite type="TestFixture" name="Default1ControllerTest" executed="True" result="Success" success="True" time="0.288" asserts="0">
                     <results>
-                      <test-case name="MvcApplication2.Tests.Controllers.Default1ControllerTest.firstn" executed="True" result="Success" success="True" time="0.235" asserts="1" />
-                      <test-case name="MvcApplication2.Tests.Controllers.Default1ControllerTest.firstp" executed="True" result="Success" success="True" time="0.032" asserts="1" />
+                      <test-case name="MvcApplication2.Tests.Controllers.Default1ControllerTest.firstn" executed="True" result="Success" success="True" time="0.226" asserts="1" />
+                      <test-case name="MvcApplication2.Tests.Controllers.Default1ControllerTest.firstp" executed="True" result="Success" success="True" time="0.033" asserts="1" />
                       <test-case name="MvcApplication2.Tests.Controllers.Default1ControllerTest.fnull" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-                      <test-case name="MvcApplication2.Tests.Controllers.Default1ControllerTest.secondn" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="MvcApplication2.Tests.Controllers.Default1ControllerTest.secondn" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                       <test-case name="MvcApplication2.Tests.Controllers.Default1ControllerTest.secondp" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                       <test-case name="MvcApplication2.Tests.Controllers.Default1ControllerTest.thirdn" executed="True" result="Success" success="True" time="0.001" asserts="1" />
                       <test-case name="MvcApplication2.Tests.Controllers.Default1ControllerTest.thirdp" executed="True" result="Success" success="True" time="0.001" asserts="1" />

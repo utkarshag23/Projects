@@ -20,7 +20,7 @@
 	</Target> 
 
   <Target Name="Clean">
-    <MSBuild Projects="@(AllProjects)" />
+    <MSBuild Projects="$(AllProjects)" />
     
   </Target>  
     
