@@ -14,20 +14,20 @@
     <AllProjects Include="$(MSBuildProjectDirectory)\*.csproj" />
      </ItemGroup>
    
+<Target Name="Build">
+ <CallTarget Targets="Clean" />
+    <CallTarget Targets="Test" />
+	</Target> 
+
   <Target Name="Clean">
-    <MSBuild Projects="$(AllProjects)" Targets="Clean" />
+    <MSBuild Projects="@(AllProjects)" />
     
   </Target>  
- 
-  <Target Name="Compile">
-    <MSBuild Projects="$(AllProjects)" Targets="Build" Properties="WarningLevel=1" />
     
-  </Target>
-     
-  <Target Name="Test" DependsOnTargets="Clean;Compile">
+  <Target Name="Test">
         <NUnit ToolPath="$(NUnit-ToolPath)" DisableShadowCopy="true" Assemblies="MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll" OutputXmlFile="$(MSBuildProjectDirectory)\qhode\testresults\test-results.xml" />
   </Target>
         
-  <Target Name="Build" DependsOnTargets="Clean;Compile;Test;" />
+  
  
 </Project>
